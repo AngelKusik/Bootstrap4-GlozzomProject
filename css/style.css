@@ -1,0 +1,136 @@
+/******* HOME PAGE ********/
+
+/* We added this because for some reason we were getting a scroll bar at the bottom
+of the page (most likely because of the photo gallery where we used the lightbox code from Ekko (js) )
+*/
+body {
+  overflow-x: hidden;
+}
+
+/*Navbar*/
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-left: 3px solid #444;
+}
+
+/*Carousel*/
+
+.carousel-item {
+  height: 450px;
+}
+
+/*An interesting thing here to take note is that instead of adding the img directly to the page
+using an img tag, we created a class for each image and we are adding and editing it here. */
+.carousel-img-1 {
+  background: url('../img/image1.jpg');
+  background-size: cover;
+}
+
+.carousel-img-2 {
+  background: url('../img/image2.jpg');
+  background-size: cover;
+}
+
+.carousel-img-3 {
+  background: url('../img/image3.jpg');
+  background-size: cover;
+}
+
+/*Home-Heading*/
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url('../img/lights.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.7);
+}
+
+/*Video Play*/
+
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url('../img/media.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#video-play a {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  #info {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  #about h1 {
+    margin-top: 1.5rem;
+  }
+
+  #staff img {
+    margin-top: 1.5rem;
+  }
+}
+
+/******* ABOUT US PAGE ********/
+
+/*header*/
+#page-header {
+  height: 210px;
+  background: url('../img/image1.jpg');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-color: 1px #eee solid;
+  padding-top: 50px;
+}
+
+/*About section*/
+.about-img {
+  margin-top: -55px; /*here we added this to make the img go up and overlap the section above a little*/
+}
+
+/******* SERVICES PAGE ********/
+
+/*FAQ Accordion*/
+#faq .card {
+  border: #444;
+}
+
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body, #faq .card-header {
+  background: #333;
+}
+
+/******* FOOTER ********/
+#main-footer {
+  background: #000;
+  color: #fff;
+}
